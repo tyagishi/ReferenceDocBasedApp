@@ -10,8 +10,8 @@ import SwiftUI
 @main
 struct ReferenceDocBasedAppApp: App {
     var body: some Scene {
-        DocumentGroup(newDocument: ReferenceDocBasedAppDocument()) { file in
-            ContentView(document: file.$document)
-        }
+        DocumentGroup(newDocument: MyReferenceDoc.init, editor: { config in
+            ContentView(refDocument: config.document)
+        })
     }
 }

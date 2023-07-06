@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		360DEBF12A5689A4007C3891 /* ReferenceDocBasedAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360DEBF02A5689A4007C3891 /* ReferenceDocBasedAppApp.swift */; };
-		360DEBF32A5689A4007C3891 /* ReferenceDocBasedAppDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360DEBF22A5689A4007C3891 /* ReferenceDocBasedAppDocument.swift */; };
+		360DEBF32A5689A4007C3891 /* MyReferenceDoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360DEBF22A5689A4007C3891 /* MyReferenceDoc.swift */; };
 		360DEBF52A5689A4007C3891 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360DEBF42A5689A4007C3891 /* ContentView.swift */; };
 		360DEBF72A5689A8007C3891 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 360DEBF62A5689A8007C3891 /* Assets.xcassets */; };
 		360DEBFC2A5689A8007C3891 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 360DEBFB2A5689A8007C3891 /* Preview Assets.xcassets */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		360DEBED2A5689A4007C3891 /* ReferenceDocBasedApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReferenceDocBasedApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		360DEBF02A5689A4007C3891 /* ReferenceDocBasedAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceDocBasedAppApp.swift; sourceTree = "<group>"; };
-		360DEBF22A5689A4007C3891 /* ReferenceDocBasedAppDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceDocBasedAppDocument.swift; sourceTree = "<group>"; };
+		360DEBF22A5689A4007C3891 /* MyReferenceDoc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyReferenceDoc.swift; sourceTree = "<group>"; };
 		360DEBF42A5689A4007C3891 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		360DEBF62A5689A8007C3891 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		360DEBF82A5689A8007C3891 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,7 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				360DEBF02A5689A4007C3891 /* ReferenceDocBasedAppApp.swift */,
-				360DEBF22A5689A4007C3891 /* ReferenceDocBasedAppDocument.swift */,
+				360DEBF22A5689A4007C3891 /* MyReferenceDoc.swift */,
 				360DEBF42A5689A4007C3891 /* ContentView.swift */,
 				360DEBF62A5689A8007C3891 /* Assets.xcassets */,
 				360DEBF82A5689A8007C3891 /* Info.plist */,
@@ -145,7 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				360DEBF12A5689A4007C3891 /* ReferenceDocBasedAppApp.swift in Sources */,
-				360DEBF32A5689A4007C3891 /* ReferenceDocBasedAppDocument.swift in Sources */,
+				360DEBF32A5689A4007C3891 /* MyReferenceDoc.swift in Sources */,
 				360DEBF52A5689A4007C3891 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

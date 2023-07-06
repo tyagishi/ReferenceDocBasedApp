@@ -14,16 +14,16 @@ extension UTType {
     }
 }
 
-struct ReferenceDocBasedAppDocument: FileDocument {
+class MyReferenceDoc: ReferenceFileDocument {
     var text: String
-
-    init(text: String = "Hello, world!") {
-        self.text = text
+    
+    init() {
+        self.text = "Hello world"
     }
-
+    
     static var readableContentTypes: [UTType] { [.exampleText] }
-
-    init(configuration: ReadConfiguration) throws {
+    
+    required init(configuration: ReadConfiguration) throws {
         guard let data = configuration.file.regularFileContents,
               let string = String(data: data, encoding: .utf8)
         else {
@@ -32,8 +32,13 @@ struct ReferenceDocBasedAppDocument: FileDocument {
         text = string
     }
     
-    func fileWrapper(configuration: WriteConfiguration) throws -> FileWrapper {
-        let data = text.data(using: .utf8)!
+    typealias Snapshot = String
+    func snapshot(contentType: UTType) throws -> String {
+        text
+    }
+    
+    func fileWrapper(snapshot: String, configuration: WriteConfiguration) throws -> FileWrapper {
+        let data = snapshot.data(using: .utf8)!
         return .init(regularFileWithContents: data)
     }
 }

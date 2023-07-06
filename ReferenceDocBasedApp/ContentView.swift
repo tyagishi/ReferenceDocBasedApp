@@ -8,13 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
-    @Binding var document: ReferenceDocBasedAppDocument
+    @ObservedObject var refDocument: MyReferenceDoc
 
     var body: some View {
-        TextEditor(text: $document.text)
+        VStack {
+            Text("ReferenceDocApp")
+            TextEditor(text: $refDocument.text)
+        }
     }
 }
 
 #Preview {
-    ContentView(document: .constant(ReferenceDocBasedAppDocument()))
+    ContentView(refDocument: MyReferenceDoc())
 }
